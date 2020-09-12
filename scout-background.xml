@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scout Background</name>
+		<description>Basic background of Scouts</description>
+		<author url="https://www.reddit.com/user/ElementAurix">ElementAurix</author>
+		<update version="0.0.1">
+			<file name="scout-background.xml" url="https://raw.githubusercontent.com/ElementAurix/5e/5e/-scout-background.xml" />
+		</update>
+	</info>
+
+	<element name="Scout" type="Background" source="Homebrew" id="ID_BACKGROUND_SCOUT">
+		<description>
+			<p>From a dexterous soldier picked for his speed, to a young villager looking for new lands to settle, there are many reasons one might pick or be picked for a life of scouting, but to be sure, being light of foot and hardened of spirit is a must. You will be the first to leave camp in the morning to get information on the path ahead and likely last to return to your comrades at the end of the night. Being far from base camp or your home for extend periods of time has shown you the value in being able to harvest the land around you to heal your wounds and mend your equipment, you cannot count the times the one extra arrow you made at your fire, or the repairs you made to your armor has saved your life.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Choose two from among Survival, Nature, Medicine, and Stealth</li>
+				<li> <strong>Tool Proficiencies:</strong> Choose two from among Cartographer's Tools, Leatherworker's Tools, Smith's Tools, Tinker's Tools, Woodcarver's Tools, and Herbalism Kit</li>
+				<li> <strong>Equipment:</strong> Two tools you are proficient in, set of warm clothes, a backpack, a bedroll, a tinder box, a days rations and water skin and a belt pouch</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_WANDERER" />
+		</description>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Scout)" supports="Skill" number="2" />
+			<select type="Proficiency" name="Tool Proficiency (Scout)" supports="Tool" optional="true"/>
+			<select type="Language" name="Language (Scout)" optional="true" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_WANDERER" />
+		</rules>
+	</element>
+	<element name="Feature: Wanderer" type="Background Feature" source="Homebrew" id="ID_BACKGROUND_FEATURE_WANDERER">
+		<description>
+			<p>You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.</p>
+		</description>
+		<sheet alt="Wanderer">
+			<description>Rarely able to find a home but work is always a plenty.</description>
+		</sheet>
+	</element>
+</elements>
