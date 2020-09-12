@@ -19,10 +19,12 @@
 			</ul>
 			<div element="ID_BACKGROUND_FEATURE_WANDERER" />
 		</description>
+        <setters>
+			<set name="short">2 Survival/Nature/Medicine/Stealth, 2 Cartographer's Tools/Leatherworker's Tools/Smith's Tools/Tinker's Tools/Woodcarver's Tools/Herbalism Kit</set>
+		</setters>
 		<rules>
 			<select type="Proficiency" name="Skill Proficiency (Scout)" supports="Skill" number="2" />
-			<select type="Proficiency" name="Tool Proficiency (Scout)" supports="Tool" optional="true"/>
-			<select type="Language" name="Language (Scout)" optional="true" />
+			<select type="Proficiency" name="Tool Proficiency (Scout)" supports="Tool" number="2"/>
 			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_WANDERER" />
 		</rules>
 	</element>
